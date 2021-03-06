@@ -137,23 +137,20 @@ footer a {  color: var(--teaRoseText);  }
 
 div.logo-rs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   height: 53px;
 }
  
 div.logo-rs > div,
 div.logo-rs > figure  {  
-  flex: 33.33%;  
+  flex: 25%;
   height: 60px;
   line-height: 27px;
+
 }
 
-div.logo-rs > div:nth-child(2) {  
-  text-align: center;  
-  padding-top: 14px;
-}
-
-div.logo-rs > div:last-child {  
+div.logo-rs > div {  
   text-align: right;  
   padding-top: 14px;
 }
@@ -165,13 +162,25 @@ div.logo-rs > figure {
 
 div.logo-rs figure img {  width: 100px; }
 
+figure.link-youtube img { margin-top: 12px; }
+
 div.logo-rs figcaption { 
   position: absolute;  
   top: 0;
-  left: 120px;
+  left: 110px;
   padding-top: 14px;
 }
 
+@media (max-width: 992px) {
+  figcaption {  display: none;  }
+}
 
-
+@media (max-width: 600px) {
+  div.logo-rs > div { 
+    flex: 50%;
+    text-align: left;
+  }
+  div.logo-rs > figure {  flex: 50%; }
+  div.logo-rs { height: 106px;  }
+}
 

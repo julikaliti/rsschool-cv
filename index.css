@@ -15,6 +15,7 @@ body {
   background-color: var(--teaRoseOp);
   color: var(--greyHeader);
 }
+a {  color: var(--grey);  }
 /*-------------  CV  ------------------*/
 header {
   display: flex;
@@ -42,6 +43,10 @@ header {
 }
 
 .contact-info {  padding-left: 20px;  }
+
+ul.contact {  list-style-type: none;  }
+
+ul.contact li { padding-bottom: 10px;}
 
 .main-content {
   flex: 66.66%;
@@ -99,11 +104,7 @@ hr {
   .flex-container-date p      {  margin-bottom: 0;  }
 }
 
-footer {
-  padding: 10px 10px 10px 30px;
-  background-color: var(--grey);
-  color: var(--teaRoseText);
-}
+
 
 /*  ---------sub-Header in Contact-info -------------*/
 
@@ -112,9 +113,65 @@ footer {
 /* languages*/
 ul {  padding-left: 0px;  }
 
-ul.without-marker {  list-style-type: none;  }
+ul.without-marker {  
+  list-style-type: none;
+  margin-top: 0px;    
+}
 
 .flex-container ul {  flex: 50%;  }
 @media (max-width: 600px) {
   .flex-container ul {  flex: 100%;  }
 }
+
+p.lang {margin-bottom: 0px;}
+
+/* ------------------Footer--------------------------*/
+
+footer {
+  padding: 10px 10px 10px 30px;
+  background-color: var(--grey);
+  color: var(--teaRoseText);
+}
+
+footer a {  color: var(--teaRoseText);  }
+
+div.logo-rs {
+  display: flex;
+  align-items: center;
+  height: 53px;
+}
+ 
+div.logo-rs > div,
+div.logo-rs > figure  {  
+  flex: 33.33%;  
+  height: 60px;
+  line-height: 27px;
+}
+
+div.logo-rs > div:nth-child(2) {  
+  text-align: center;  
+  padding-top: 14px;
+}
+
+div.logo-rs > div:last-child {  
+  text-align: right;  
+  padding-top: 14px;
+}
+
+div.logo-rs > figure {
+  position: relative;
+  margin: 0px;
+} 
+
+div.logo-rs figure img {  width: 100px; }
+
+div.logo-rs figcaption { 
+  position: absolute;  
+  top: 0;
+  left: 120px;
+  padding-top: 14px;
+}
+
+
+
+
